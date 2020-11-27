@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans&display=swap');
+
+
+@font-face {
+    font-family: "SegoeUI";
+    src: url(/assets/fonts/Segoe_UI.woff) format('woff');
+}
+
+@font-face {
+    font-family: "SegoeUIBold";
+    src: url(/assets/fonts/Segoe_UI_Bold.woff) format('woff');
+}
+
+
+:root {
+    --primary-color: #0481cb;
+    --fuente-encode: 'Encode Sans', sans-serif;
+    --fuente-segoeUI: 'SegoeUI';
+    --fuente-segoeUIBold: 'SegoeUIBold'
+}
+
+
+body {
+    font-family: var(--fuente-encode)
+}
+
+a {
+    font-weight: 400;
+    color: var(--primary-color);
+    
+}
+
+h1 {
+    font-family: var(--fuente-segoeUI);
+}
+
+p {
+    font-family: var(--fuente-encode);
+    font-size: 14px;
+}
+/* Navbar */
+/* 
+.navbar {
+    height: 140px;
+    background-color: white;
+    box-shadow: ;
+} */
+
+.img-logo {
+    max-width: 4rem;
+}
+
+.right-nav-text {
+    font-size: var(--fuente-encode);
+    color: var(--primary-color);
+}
+
+
+.portal-link {
+
+}
+
+.item1 {
+    font-size: 20px;
+    color: white;
+}
+
+.mainpage {
+    width: 80%;
+}
+
+.icon-boxes {
+    /* margin-top: 20px; */
+    padding: 20px;
+}
+
+
+.icon-box {
+    padding: 50px 30px;
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 0 29px 0 rgba(18, 66, 101, 0.08);
+    transition: all 0.3s ease-in-out;
+    transition: .3s;
+    border-radius: 8px;
+    z-index: 1;
+}
+
+
+.box-sh:hover {
+    box-shadow: 0 0 11px rgba(33,33,33,.2); 
+    transition: .3s;
+    cursor: pointer;
+    
+}
+
+
+.mis_beneficios {
+    padding: 3rem;
+    letter-spacing: -.3px;
+}
+
+.beneficio-icon {
+    
+}
+
+span.nombre-cuil {
+    color: black;
+    font-family: var(--fuente-segoeUIBold);
+
+}
