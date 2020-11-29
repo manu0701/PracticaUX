@@ -19,67 +19,114 @@
         crossorigin="anonymous" />
     <link rel="stylesheet" href="/assets/css/style.css">
 </head>
-
 <body>
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <a class="navbar-brand" href="#">
-            <img src="/assets/img/pngegg.png" class="img-logo img-fluid" alt="">
+            <div class="container">
+               <h3 class="marca">SISTEMA DE <br>COBRANZAS</h3>
         </a>
+        
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
             aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse mx-5" id="navbarText">
+        <div class="collapse navbar-collapse mx-3" id="navbarText">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Portal de Beneficios<span class="sr-only">(current)</span></a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">PORTAL DE BENEFICIOS<span class="sr-only">(current)</span></a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="#">DOCUMENTOS</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Documentos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contacto</a>
-                </li>
+                    <a class="nav-link" href="#">CONTACTO</a>
+                </li> -->
             </ul>
             <span class="right-nav-text navbar-text">
-                <h3 class="right-nav-text"><i class='bx bx-user'></i> Mi Cuenta <span class="nombre-cuil"> | Cerrar
-                        Sesión <i class='bx bxs-user-x'></i></span></h3>
+                <h3 class="right-nav-text"><i class='bx bx-log-in-circle' ></i>
+                    Mi Cuenta <span class="cerrar_sesion"> | Cerrar
+                        Sesión <i class='bx bx-log-out-circle' ></i>
+                    </span></h3>
             </span>
+        </div>
         </div>
     </nav>
 
     <div class="container mainpage">
-        <div class="container-fluid mis_beneficios">
-            <h1>
-                Mis Beneficios
+        <div class="row mis_beneficios justify-content-between">
+            <h1 class="misbeneficios">Mis Beneficios
+                <h3 class="nombre">Analía Perez - <span class="cuil">CUIL : 20-38051784-2</span> </h3>
             </h1>
-            <h3>Analía Perez</h3>
+           
         </div>
 
         <div class="row icon-boxes">
             <div class="col-md-6 col-lg-6 d-flex align-items-stretch mb-5 mb-lg-0 aos-init aos-animate box-sh"
                 data-aos="zoom-in" data-aos-delay="200">
-                <div class="icon-box">
-                    <h4 class="title"><a href=""><a href=""><i class='bx bxs-bank px-2'></i>AUH</a></h4>
+                <div class="icon-box" href="/auh.html">
+                    <a href="/auh.html">
+                    <h4 class="title nombreBeneficio"><a href="/auh.html"><i class='bx bxs-bank px-2'></i>AUH</a></h4>
                     <hr>
                     <p class="description">Asignación Universal por hijo</p>
+                    <div class="estado">
+                        <h2 class="estado-titulo">Período: </h2>
+                        <h2 class="estado-liquidado"> <i class='bx bx-calendar'></i> 09/2020</h2>
+                        <button type="button" class="btn btn-info btn-detail mx-auto">11/2020 <i
+                                class='bx bxs-right-arrow-square'></i></i></button>
+                    </div>
+                    <div class="estado py-2">
+                        <h2 class="estado-titulo mt-2">Estado: </h2>
+                        <h2 class="estado-liquidado"> <i class='bx bx-check-double check-liquidado'></i> Liquidado</h2>
+                        
+                        <div class="estado py-2">
+                            <h2 class="estado-titulo mt-2">Fecha de Cobro </h2>
+                            <h2 class="estado-pendiente"> <i class='bx bx-calendar'></i> 24/12/20
+                            </h2>
+                        <button type="button" class="btn btn-info btn-detail mx-auto" href="/auh.html"> <a href="/auh.html" class="a-detalles"> Detalles </a><i
+                                class='bx bxs-right-arrow-square'></i></i></button>
+                    </div>
+                    </div>
+                    <div class="monto">
+                        <h2 class="monto-h2 mt-2">$9.200,00</h2>
+                        <hr>
+                        <span class="badge badge-pill badge-success p-3"> <i class='bx bx-check'></i> Cobrado </span>
+                    </div>
+                </a>
                 </div>
             </div>
+            
 
+            <!-- Progresar -->
             <div class="col-md-6 col-lg-6 d-flex align-items-stretch mb-5 mb-lg-0 aos-init aos-animate"
                 data-aos="zoom-in" data-aos-delay="300">
                 <div class="icon-box">
-                    <h4 class="title"><a href=""><i
+                    <h4 class="title"><a href="/progresar.html"><i
                                 class='bx bxs-credit-card-front beneficio-icon px-2'></i>Progresar</a></h4>
                     <hr>
                     <p class="description">Beca progresar para jovenes estudiantes</p>
-                    <div class="estado"><h2 class="estado-titulo">Período: </h2><h2 class="estado-liquidado"> <i class='bx bx-calendar' ></i> 11/2020</h2>
-                    <button type="button" class="btn btn-info btn-detail mx-auto">11/2020 <i class='bx bxs-right-arrow-square' ></i></i></button>
-                </div>
-                    <div class="estado py-2"><h2 class="estado-titulo mt-2">Estado: </h2><h2 class="estado-liquidado"> <i class='bx bx-check-double check-liquidado' ></i> Liquidado</h2>
-                    <button type="button" class="btn btn-info btn-detail mx-auto">Detalles <i class='bx bxs-right-arrow-square' ></i></i></button>
-                </div>
+                    <div class="estado">
+                        <h2 class="estado-titulo">Período: </h2>
+                        <h2 class="estado-liquidado"> <i class='bx bx-calendar'></i> 11/2020</h2>
+                        
+                        <button type="button" class="btn btn-info btn-detail mx-auto">11/2020 <i
+                                class='bx bxs-right-arrow-square'></i></i></button>
+                    </div>
+                    
+                    <div class="estado py-2">
+                        <h2 class="estado-titulo mt-2">Estado: </h2>
+                        <h2 class="estado-pendiente"> <i class='bx bx-alarm-exclamation iconpendiente'></i> Pendiente
+                        </h2>
+                        <button type="button" class="btn btn-info btn-detail mx-auto">Detalles <i
+                                class='bx bxs-right-arrow-square'></i></i></button>
+                    </div>
+                    <div class="monto">
+                        <h2 class="monto-h2 mt-2">$14.175,60</h2>
+                        <hr>
+                        <span class="badge badge-pill badge-light p-3"><i
+                            class='bx bxs-credit-card-front beneficio-icon px-2'></i> Pendiente de cobro</span>
+                        <h5 class="rendicion"></h5>
+                    </div>
 
                 </div>
             </div>
@@ -87,44 +134,82 @@
             <div class="col-md-6 col-lg-6 d-flex align-items-stretch mb-5 mb-lg-0 mt-5 aos-init aos-animate"
                 data-aos="zoom-in" data-aos-delay="400">
                 <div class="icon-box">
-                    <h4 class="title"><a href=""><i class='bx bxs-bank px-2'></i>Monotributo Social</a></h4>
+                    <h4 class="title"><a href="/monotributo.html"><i class='bx bxs-bank px-2'></i>Monotributo Social</a></h4>
                     <hr>
                     <p class="description">Monitributo social tributario</p>
+                    <div class="estado">
+                        <h2 class="estado-titulo">Período: </h2>
+                        <h2 class="estado-liquidado"> <i class='bx bx-calendar'></i> 09/2020</h2>
+                        <button type="button" class="btn btn-info btn-detail mx-auto">11/2020 <i
+                                class='bx bxs-right-arrow-square'></i></i></button>
+                    </div>
+                    <div class="estado py-2">
+                        <h2 class="estado-titulo mt-2">Estado: </h2>
+                        <h2 class="estado-aliquidar"> <i class='bx bx-money iconaliquidar'></i> A Liquidar
+                        </h2>
+                        <button type="button" class="btn btn-info btn-detail mx-auto">Detalles <i
+                                class='bx bxs-right-arrow-square'></i></i></button>
+                    </div>
+                    <div class="monto">
+                        <h2 class="monto-h2 mt-2">$7.400,40</h2>
+                        <hr>
+                        <h5 class="rendicion"><i
+                            class='bx bxs-credit-card-front beneficio-icon px-2'></i>Pendiente de cobro</h5>
+                    </div>
                 </div>
             </div>
 
             <div class="col-md-6 col-lg-6 d-flex align-items-stretch mb-5 mb-lg-0 mt-5 aos-init aos-animate"
                 data-aos="zoom-in" data-aos-delay="500">
                 <div class="icon-box">
-                    <h4 class="title"><a href=""><i class='bx bxs-credit-card-front beneficio-icon px-2'></i>Plan
+                    <h4 class="title"><a href="/trabajar.html"><i class='bx bxs-credit-card-front beneficio-icon px-2'></i>Plan
                             Trabajar</a></h4>
                     <hr>
                     <p class="description">Beneficio Plan Trabajar</p>
+                    <div class="estado">
+                        <h2 class="estado-titulo">Período: </h2>
+                        <h2 class="estado-liquidado"> <i class='bx bx-calendar'></i> 09/2020</h2>
+                        <button type="button" class="btn btn-info btn-detail mx-auto">11/2020 <i
+                                class='bx bxs-right-arrow-square'></i></i></button>
+                    </div>
+                    <div class="estado py-2">
+                        <h2 class="estado-titulo mt-2">Estado: </h2>
+                        <h2 class="estado-pendiente"> <i class='bx bx-alarm-exclamation iconpendiente'></i> Pendiente
+                        </h2>
+                        <button type="button" class="btn btn-info btn-detail mx-auto">Detalles <i
+                                class='bx bxs-right-arrow-square'></i></i></button>
+                    </div>
+                    <div class="monto">
+                        <h2 class="monto-h2 mt-2">$24.700,10</h2>
+                        <hr>
+                        <h5 class="rendicion"><i
+                            class='bx bxs-credit-card-front beneficio-icon px-2'></i>Pendiente de cobro</h5>
+                    </div>
                 </div>
 
             </div>
-            </div>
+        </div>
 
 
-            <!-- GetButton.io widget -->
-            <script type="text/javascript">
-                (function () {
-                    var options = {
-                        facebook: "113686738612", // Facebook page ID
-                        call_to_action: "Contactanos", // Call to action
-                        position: "right", // Position may be 'right' or 'left'
-                    };
-                    var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
-                    var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
-                    s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
-                    var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
-                })();
-            </script>
-            <!-- /GetButton.io widget -->
+        <!-- GetButton.io widget -->
+        <script type="text/javascript">
+            (function () {
+                var options = {
+                    facebook: "113686738612", // Facebook page ID
+                    call_to_action: "Contactanos", // Call to action
+                    position: "right", // Position may be 'right' or 'left'
+                };
+                var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+                var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+                s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+                var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+            })();
+        </script>
+        <!-- /GetButton.io widget -->
 
-            <!-- MDB core JavaScript -->
-            <script type="text/javascript"
-                src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
 
 
 </body>

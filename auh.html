@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion de Cobranzas</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <a class="navbar-brand" href="#">
+            <div class="container">
+                <h3 class="marca">SISTEMA DE <br>COBRANZAS</h3>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse mx-3" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">PORTAL DE BENEFICIOS<span class="sr-only">(current)</span></a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="#">DOCUMENTOS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">CONTACTO</a>
+                </li> -->
+            </ul>
+            <span class="right-nav-text navbar-text">
+                <h3 class="right-nav-text"><i class='bx bx-log-in-circle'></i>
+                    </i> Mi Cuenta <span class="cerrar_sesion"> |
+                        Cerrar
+                        Sesión <i class='bx bxs-user-x icon_user'></i></span></h3>
+            </span>
+        </div>
+        </div>
+    </nav>
+
+    <div class="container mainpage">
+        <h1 class="tituloBeneficio">Asignación Universal Por Hijo</h4>
+            <hr>
+
+            <div class="container beneficioMain">
+                <div class="row">
+
+                    <div class="alert alert-success" role="alert">
+                        Tu beneficio ya fue cobrado, si tenes dudas <a href="#" class="alert-link">contactate con
+                            nosotros</a>.
+                    </div>
+
+                    <div class="container">
+                        <h1 class="ultimopago tituloBeneficio">Último pago</h1>
+                        <div class="col-lg-12 col-ultimopago">
+                            
+                        </div>
+                    </div>
+
+
+                    <div class="container">
+                        <h2 class="detalleBeneficio">Beneficiarios</h2>
+
+                       
+
+
+                        <!--Table-->
+                        <table id="tablePreview" class="table table-bordered">
+                            <!--Table head-->
+                            <thead>
+                                <tr class="col-lista">
+                                    <th>Nombre</th>
+                                    <th>Apellido</th>
+                                    <th>CUIL</th>
+                                    <th>Relación</th>
+                                    <th>Fechas de cobro</th>
+
+                                </tr>
+                            </thead>
+                            <!--Table head-->
+                            <!--Table body-->
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Matias</th>
+                                    <td>Sauer</td>
+                                    <td>20-39213454-3</td>
+                                    <td>Hijo</td>
+                                    <td><button type="button" class="btn btn-light btnverbenef">Ver <i class='bx bxs-chevron-right'></i></button>
+                                        </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Jorge</th>
+                                    <td>Sauer</td>
+                                    <td>20-35689454-2</td>
+                                    <td>Hijo</td>
+                                    <td><button type="button" class="btn btn-light btnverbenef">Ver <i class='bx bxs-chevron-right'></i></button></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Anabela</th>
+                                    <td>Gomez</td>
+                                    <td>20-39213345-6</td>
+                                    <td>Hija</td>
+                                    <td><button type="button" class="btn btn-light btnverbenef">Ver <i class='bx bxs-chevron-right'></i></button></td>
+                                </tr>
+                            </tbody>
+                            <!--Table body-->
+                        </table>
+                        <!--Table-->
+
+
+
+
+                    </div>
+
+                </div>
+            </div>
+
+
+    </div>
+
+
+    <!-- GetButton.io widget -->
+    <script type="text/javascript">
+        (function () {
+            var options = {
+                facebook: "113686738612", // Facebook page ID
+                call_to_action: "Contactanos", // Call to action
+                position: "right", // Position may be 'right' or 'left'
+            };
+            var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+            var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+            s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+            var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+        })();
+    </script>
+    <!-- /GetButton.io widget -->
+
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+
+
+</body>
+
+</html>
