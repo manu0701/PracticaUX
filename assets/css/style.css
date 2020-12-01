@@ -338,5 +338,23 @@ a.nav-link {
 
 .footerleft {
   list-style: none;
+  margin-left: -30px;
 }
 
+.containerfooter {
+  padding: 30px;
+}
+
+.txt-footer {
+  font-family: var(--fuente-segoeUIBold);
+}
+
+.alert-warning span {
+  font-weight: 600;
+}
+
+.pendiente-liq {
+    color: gray !important;
+    border: .5px solid gray !important;
+    font-family: 'SegoeUI';
+}

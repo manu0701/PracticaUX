@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Gestion de Cobranzas</title>
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <!-- Font Awesome -->
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+     <!-- Google Fonts -->
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+     <!-- Material Design Bootstrap -->
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+          integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+          crossorigin="anonymous" />
+     <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+     <!-- Navbar -->
+     <nav class="navbar navbar-expand-lg navbar-light bg-white">
+          <a class="navbar-brand" href="index.html">
+               <div class="container">
+                    <h3 class="marca">SISTEMA DE <br>COBRANZAS</h3>
+          </a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+               aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse mx-3" id="navbarText">
+               <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                         <a class="nav-link" href="index.html">PORTAL DE BENEFICIOS<span
+                                   class="sr-only">(current)</span></a>
+                    </li>
+                    <!-- <li class="nav-item">
+                    <a class="nav-link" href="#">DOCUMENTOS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">CONTACTO</a>
+                </li> -->
+               </ul>
+               <span class="right-nav-text navbar-text">
+                    <h3 class="right-nav-text"><i class='bx bx-log-in-circle'></i>
+                         </i> Mi Cuenta <span class="cerrar_sesion"> |
+                              Cerrar
+                              Sesión <i class='bx bxs-user-x icon_user'></i></span></h3>
+               </span>
+          </div>
+          </div>
+     </nav>
+
+     <div class="container mainpage">
+          <h1 class="tituloBeneficio">Plan Trabajar</h4>
+               <hr>
+
+               <div class="container beneficioMain">
+                    <div class="row">
+
+                         <div class="alert alert-danger" role="alert">
+                              Tu beneficio está pendiente de revisión. Para poder avanzar, <span>subí la documentación que
+                                  solicitamos abajo. </span>
+                          </div>
+
+
+                    </div>
+
+                    <div class="container">
+                         <div class="container">
+                              <h1 class="ultimopago tituloBeneficio">Próximo pago</h1>
+                              <div class="col-lg-12 col-ultimopago">
+                                  <div class="row">
+                                      <div class="col-4">
+      
+                                          <h2 class="emision"><i class='iconcard bx bxs-id-card'></i></h2>
+                                      </div>
+                                      <div class="col-4">
+                                          <h2 class="titulobeneficiario pt-4 pl-4 mt-4"><i
+                                                  class='bx bxs-chevron-right'></i>Beneficiario:</h2>
+                                          <h4 class="nombrebeneficiario pl-4">Nerina Sanchez</h4>
+                                          <hr>
+                                          <h2 class="titulobeneficiario pl-4 pb-2"><i class='bx bxs-chevron-right'></i>Monto:
+                                          </h2>
+                                          <h4 class="montobeneficiario pl-4">$24.700,10</h4>
+      
+                                      </div>
+                                      <div class="col-4">
+                                          <h2 class="titulobeneficiario pt-4 pl-4 pb-2  mt-4"><i
+                                                  class='bx bxs-chevron-right'></i>Período de Cobro:</h2>
+                                          <h4 class="nombrebeneficiario pl-4"><a href="#" class="badge badge-danger"><i
+                                                      class='bx bxs-error-circle'></i></i> Documentación necesaria</a> </h4>
+                                          <h2 class="titulobeneficiario pt-4 pl-4"><i class='bx bxs-chevron-right'></i>Lugar
+                                              de Cobro:</h2>
+                                          <h4 class="nombrebeneficiario pl-4">Cajero Banco Ciudad, Suc 70, Montevideo 207,
+                                              Buenos Aires</h4>
+      
+                                      </div>
+      
+                                  </div>
+      
+                              </div>
+                          </div>
+               </div>
+
+
+               <div class="container">
+                    <h2 class="detalleBeneficio mt-3">Beneficiarios</h2>
+
+
+
+
+                    <!--Table-->
+                    <table id="tablePreview" class="table table-bordered">
+                         <!--Table head-->
+                         <thead>
+                              <tr class="col-lista">
+                                   <th>Nombre</th>
+                                   <th>Apellido</th>
+                                   <th>CUIL</th>
+                                   <th>Relación</th>
+                                   <th>Fechas de cobro</th>
+
+                              </tr>
+                         </thead>
+                         <!--Table head-->
+                         <!--Table body-->
+                         <tbody>
+                              <tr>
+                                   <th scope="row">Pedro</th>
+                                   <td>Valente</td>
+                                   <td>20-39213454-3</td>
+                                   <td>Empleado</td>
+                                   <td><button type="button" class="btn btn-light btnverbenef">Ver <i
+                                                  class='bx bxs-chevron-right'></i></button>
+                                   </td>
+                              </tr>
+                              <tr>
+                                   <th scope="row">Emilia</th>
+                                   <td>Chavez</td>
+                                   <td>20-35689454-2</td>
+                                   <td>Empleada</td>
+                                   <td><button type="button" class="btn btn-light btnverbenef">Ver <i
+                                                  class='bx bxs-chevron-right'></i></button></td>
+                              </tr>
+                              <tr>
+                                   <th scope="row">Rocío</th>
+                                   <td>Ditzel</td>
+                                   <td>20-39213345-6</td>
+                                   <td>Apoderada</td>
+                                   <td><button type="button" class="btn btn-light btnverbenef">Ver <i
+                                                  class='bx bxs-chevron-right'></i></button></td>
+                              </tr>
+                         </tbody>
+                         <!--Table body-->
+                    </table>
+                    <!--Table-->
+
+
+
+
+               </div>
+
+     </div>
+     </div>
+
+
+     </div>
+
+     <!-- Footer -->
+     <footer class="page-footer font-small teal py-5 px-5 mt-5">
+
+          <!-- Footer Text -->
+          <div class="container-fluid text-center containerfooter">
+
+               <!-- Grid row -->
+               <div class="row">
+
+                    <!-- Grid column -->
+                    <div class="col-md-6 mt-md-0 mt-3">
+
+                         <!-- Content -->
+                         <h5 class="text-uppercase font-weight-bold pb-3 txt-footer">PORTAL DE BENEFICIOS</h5>
+                         <ul class="footerleft">
+                              <li class="py-1 list-item">
+                                   <a href=""><i class='bx bxs-chevrons-right'></i> Mapa del sitio</a>
+                              </li>
+                              <li class="py-1">
+                                   <a href=""><i class='bx bxs-chevrons-right'></i> Mis beneficios</a>
+                              </li>
+                              <li class="py-1">
+                                   <a href=""><i class='bx bxs-chevrons-right'></i> Contacto</a>
+                              </li>
+                         </ul>
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <hr class="clearfix w-100 d-md-none pb-3">
+
+                    <!-- Grid column -->
+                    <div class="col-md-6 mb-md-0 mb-3">
+
+                         <!-- Content -->
+                         <h5 class="text-uppercase font-weight-bold txt-footer pb-4">Contacto</h5>
+                         <p><i class="fa fa-location-arrow"></i> Av. de Mayo 937 </p>
+                         <p><i class="fa fa-phone"></i> +54-11-8965-7485 </p>
+                         <p><i class="fa fa fa-envelope"></i> contacto@portaldebeneficios.com </p>
+
+                    </div>
+                    <!-- Grid column -->
+
+               </div>
+               <!-- Grid row -->
+
+          </div>
+          <!-- Footer Text -->
+
+
+     </footer>
+
+
+     <!-- GetButton.io widget -->
+     <script type="text/javascript">
+          (function () {
+               var options = {
+                    facebook: "113686738612", // Facebook page ID
+                    call_to_action: "Contactanos", // Call to action
+                    position: "right", // Position may be 'right' or 'left'
+               };
+               var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+               var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+               s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+               var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+          })();
+     </script>
+     <!-- /GetButton.io widget -->
+
+     <!-- MDB core JavaScript -->
+     <script type="text/javascript"
+          src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+
+
+</body>
+
+</html>
