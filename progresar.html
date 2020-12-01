@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion de Cobranzas</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <a class="navbar-brand" href="index.html">
+            <div class="container">
+                <h3 class="marca">SISTEMA DE <br>COBRANZAS</h3>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse mx-3" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">PORTAL DE BENEFICIOS<span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+            <span class="right-nav-text navbar-text">
+                <h3 class="right-nav-text"><i class='bx bx-log-in-circle'></i>
+                    </i> Mi Cuenta <span class="cerrar_sesion"> |
+                        Cerrar
+                        Sesión <i class='bx bxs-user-x icon_user'></i></span></h3>
+            </span>
+        </div>
+        </div>
+    </nav>
+
+    <div class="container mainpage">
+        <h1 class="tituloBeneficio">Beca Progresar</h1>
+        <hr>
+
+        <div class="container beneficioMain">
+            <div class="row">
+
+                <div class="alert alert-danger" role="alert">
+                    Tu beneficio está pendiente de revisión. Para poder avanzar, <span>subí la documentación que
+                        solicitamos abajo. </span>
+                </div>
+
+                <div class="container beneficioMain">
+
+                    <div class="container">
+                        <h1 class="ultimopago tituloBeneficio">Próximo pago</h1>
+                        <div class="col-lg-12 col-ultimopago">
+                            <div class="row">
+                                <div class="col-4">
+
+                                    <h2 class="emision"><i class='iconcard bx bxs-id-card'></i></h2>
+                                </div>
+                                <div class="col-4">
+                                    <h2 class="titulobeneficiario pt-4 pl-4 mt-4"><i
+                                            class='bx bxs-chevron-right'></i>Beneficiario:</h2>
+                                    <h4 class="nombrebeneficiario pl-4">Matias Sauer</h4>
+                                    <hr>
+                                    <h2 class="titulobeneficiario pl-4 pb-2"><i class='bx bxs-chevron-right'></i>Monto:
+                                    </h2>
+                                    <h4 class="montobeneficiario pl-4">$14.435,00</h4>
+
+                                </div>
+                                <div class="col-4">
+                                    <h2 class="titulobeneficiario pt-4 pl-4 pb-2  mt-4"><i
+                                            class='bx bxs-chevron-right'></i>Período de Cobro:</h2>
+                                    <h4 class="nombrebeneficiario pl-4"><a href="#" class="badge badge-danger"><i
+                                                class='bx bxs-error-circle'></i></i> Documentación necesaria</a> </h4>
+                                    <h2 class="titulobeneficiario pt-4 pl-4"><i class='bx bxs-chevron-right'></i>Lugar
+                                        de Cobro:</h2>
+                                    <h4 class="nombrebeneficiario pl-4">Banco Nación, Suc 300, AV. San Martín 683,
+                                        Buenos Aires</h4>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+        </div>
+
+        <!--Table-->
+
+        <div class="container pt-4">
+            <h1 class="text-left pt-4 pb-4 pl-2">
+                Últimos Movimientos
+            </h1>
+            <div class="row">
+                <div class="col-lg-12">
+                    <table class="table table-striped">
+
+                        <!--Table head-->
+                        <thead>
+                            <tr>
+                                <th>Fecha</th>
+                                <th>Concepto</th>
+                                <th>Descripción</th>
+                                <th>Cantidad</th>
+                                <th>Referencia</th>
+                            </tr>
+                        </thead>
+                        <!--Table head-->
+
+                        <!--Table body-->
+                        <tbody>
+                            <tr class="table-info">
+                                <th scope="row">20/12/2020</th>
+                                <td>Extracción</td>
+                                <td>-</td>
+                                <td>-$2000</td>
+                                <td> Ext. por Ventanilla</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">10/12/2020</th>
+                                <td>Compra</td>
+                                <td>Débito</td>
+                                <td>-$2500</td>
+                                <td>MercadoPago</td>
+                            </tr>
+                            <tr class="table-info">
+                                <th scope="row">20/11/2020</th>
+                                <td>Extracción</td>
+                                <td>-</td>
+                                <td>-$300</td>
+                                <td>Ext. por Cajero</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">14/09/2020</th>
+                                <td>Extracción</td>
+                                <td>-</td>
+                                <td>-$200</td>
+                                <td>Ext. por Cajero</td>
+                            </tr>
+                            <tr class="table-info">
+                                <th scope="row">05/09/2020</th>
+                                <td>Compra</td>
+                                <td>Débito</td>
+                                <td>-$4000</td>
+                                <td>MercadoPago</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">20/08/2020</th>
+                                <td>Compra</td>
+                                <td>Débito</td>
+                                <td>-$1000</td>
+                                <td>MercadoPago</td>
+                            </tr>
+                            <tr class="table-info">
+                                <th scope="row">15/08/2020</th>
+                                <td>Extracción</td>
+                                <td>-</td>
+                                <td>-$2000</td>
+                                <td>Ext. por Ventanilla</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">01/08/2020</th>
+                                <td>Extracción</td>
+                                <td>-</td>
+                                <td>-$5000</td>
+                                <td>Ext. por Cajero</td>
+                            </tr>
+                            <tr class="table-info">
+                                <th scope="row">20/07/2020</th>
+                                <td>Compra</td>
+                                <td>Débito</td>
+                                <td>-$3000</td>
+                                <td>MercadoPago</td>
+                            </tr>
+                        </tbody>
+                        <!--Table body-->
+
+
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!--Table-->
+
+
+    </div>
+
+
+    <!-- GetButton.io widget -->
+    <script type="text/javascript">
+        (function () {
+            var options = {
+                facebook: "113686738612", // Facebook page ID
+                call_to_action: "Contactanos", // Call to action
+                position: "right", // Position may be 'right' or 'left'
+            };
+            var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+            var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+            s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+            var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+        })();
+    </script>
+    <!-- /GetButton.io widget -->
+
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+
+
+</body>
+
+</html>

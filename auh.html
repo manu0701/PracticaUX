@@ -23,7 +23,7 @@
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="index.html">
             <div class="container">
                 <h3 class="marca">SISTEMA DE <br>COBRANZAS</h3>
         </a>
@@ -35,7 +35,7 @@
         <div class="collapse navbar-collapse mx-3" id="navbarText">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">PORTAL DE BENEFICIOS<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="index.html">PORTAL DE BENEFICIOS<span class="sr-only">(current)</span></a>
                 </li>
                 <!-- <li class="nav-item">
                     <a class="nav-link" href="#">DOCUMENTOS</a>
@@ -66,70 +66,100 @@
                             nosotros</a>.
                     </div>
 
-                    <div class="container">
-                        <h1 class="ultimopago tituloBeneficio">Último pago</h1>
-                        <div class="col-lg-12 col-ultimopago">
-                            
+                
+                </div>
+
+                <div class="container">
+                    <h1 class="ultimopago tituloBeneficio">Próximo pago</h1>
+                    <div class="col-lg-12 col-ultimopago">
+                        <div class="row">
+                            <div class="col-4">
+
+                                <h2 class="emision"><i class='iconcard bx bxs-id-card'></i></h2>
+                            </div>
+                            <div class="col-4">
+                                <h2 class="titulobeneficiario pt-4 pl-1 pb-2 mt-4"><i class='bx bxs-chevron-right'></i>Beneficiario:</h2>
+                                <h4 class="nombrebeneficiario pl-4">Matias Sauer</h4>
+                                <hr>
+                                <h2 class="titulobeneficiario pl-1 pb-2 "><i class='bx bxs-chevron-right'></i>Monto:</h2>
+                                <h4 class="montobeneficiario pl-4">$14.435,00</h4>
+                                
+                            </div>
+                            <div class="col-4">
+                                <h2 class="titulobeneficiario pt-4 pl-1 pb-2  mt-4"><i class='bx bxs-chevron-right'></i>Período de Cobro:</h2>
+                                <h4 class="nombrebeneficiario pl-4">Desde <span>20/12/20</span> - Hasta <span>07/01/2021</span></h4>
+                                <hr>
+                                <h2 class="titulobeneficiario pl-1 pb-2"><i class='bx bxs-chevron-right'></i>Lugar de Cobro:</h2>
+                                <h4 class="nombrebeneficiario pl-4">Banco Nación, Suc 300, AV. San Martín 683, Buenos Aires</h4>
+                            </div>
+
                         </div>
-                    </div>
-
-
-                    <div class="container">
-                        <h2 class="detalleBeneficio">Beneficiarios</h2>
-
-                       
-
-
-                        <!--Table-->
-                        <table id="tablePreview" class="table table-bordered">
-                            <!--Table head-->
-                            <thead>
-                                <tr class="col-lista">
-                                    <th>Nombre</th>
-                                    <th>Apellido</th>
-                                    <th>CUIL</th>
-                                    <th>Relación</th>
-                                    <th>Fechas de cobro</th>
-
-                                </tr>
-                            </thead>
-                            <!--Table head-->
-                            <!--Table body-->
-                            <tbody>
-                                <tr>
-                                    <th scope="row">Matias</th>
-                                    <td>Sauer</td>
-                                    <td>20-39213454-3</td>
-                                    <td>Hijo</td>
-                                    <td><button type="button" class="btn btn-light btnverbenef">Ver <i class='bx bxs-chevron-right'></i></button>
-                                        </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Jorge</th>
-                                    <td>Sauer</td>
-                                    <td>20-35689454-2</td>
-                                    <td>Hijo</td>
-                                    <td><button type="button" class="btn btn-light btnverbenef">Ver <i class='bx bxs-chevron-right'></i></button></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Anabela</th>
-                                    <td>Gomez</td>
-                                    <td>20-39213345-6</td>
-                                    <td>Hija</td>
-                                    <td><button type="button" class="btn btn-light btnverbenef">Ver <i class='bx bxs-chevron-right'></i></button></td>
-                                </tr>
-                            </tbody>
-                            <!--Table body-->
-                        </table>
-                        <!--Table-->
-
-
-
-
+                    
                     </div>
 
                 </div>
             </div>
+
+
+            <div class="container">
+                <h2 class="detalleBeneficio mt-3">Beneficiarios</h2>
+
+
+
+
+                <!--Table-->
+                <table id="tablePreview" class="table table-bordered">
+                    <!--Table head-->
+                    <thead>
+                        <tr class="col-lista">
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <th>CUIL</th>
+                            <th>Relación</th>
+                            <th>Fechas de cobro</th>
+
+                        </tr>
+                    </thead>
+                    <!--Table head-->
+                    <!--Table body-->
+                    <tbody>
+                        <tr>
+                            <th scope="row">Matias</th>
+                            <td>Sauer</td>
+                            <td>20-39213454-3</td>
+                            <td>Hijo</td>
+                            <td><button type="button" class="btn btn-light btnverbenef">Ver <i
+                                        class='bx bxs-chevron-right'></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Jorge</th>
+                            <td>Sauer</td>
+                            <td>20-35689454-2</td>
+                            <td>Hijo</td>
+                            <td><button type="button" class="btn btn-light btnverbenef">Ver <i
+                                        class='bx bxs-chevron-right'></i></button></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Anabela</th>
+                            <td>Gomez</td>
+                            <td>20-39213345-6</td>
+                            <td>Hija</td>
+                            <td><button type="button" class="btn btn-light btnverbenef">Ver <i
+                                        class='bx bxs-chevron-right'></i></button></td>
+                        </tr>
+                    </tbody>
+                    <!--Table body-->
+                </table>
+                <!--Table-->
+
+
+
+
+            </div>
+
+    </div>
+    </div>
 
 
     </div>

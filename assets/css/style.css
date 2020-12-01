@@ -159,7 +159,8 @@ span.nombre-cuil {
 }
 
 .icon_user {
-  font-size: 15px;
+  font-size: 18px;
+  vertical-align: bottom;
 }
 
 a.nav-link {
@@ -177,11 +178,11 @@ a.nav-link {
 .nombre {
   margin-top: 20px;
   font-family: var(--fuente-segoeUIBold);
-  font-size: 15px;
+  font-size: 20px;
 }
 
 .cuil {
-  font-size: 15px;
+  font-size: 18px;
   font-family: var(--fuente-encode);
 }
 
@@ -269,5 +270,73 @@ a.nav-link {
   width: 100%;
   box-shadow: 0px -1px 26px -16px rgba(0,0,0,0.75);
   background-clip: content-box;
-  height: 20vh;
 }
+
+.emision {
+  font-family: var(--fuente-segoeUIBold);
+  color: var(--primary-color);
+}
+
+.fechaemision {
+  font-size: var(--fuente-segoeUI);
+
+}
+
+.iconcard {
+  font-size: 18rem;
+}
+
+.emisiontitulo {
+  
+}
+
+.titulobeneficiario {
+  font-family: var(--fuente-segoeUIBold);
+  color: var(--primary-color);
+  font-size: 20px;
+}
+
+.nombrebeneficiario {
+  font-family: var(--fuente-encode);
+  font-size: 15px;
+
+}
+
+.montobeneficiario {
+  font-family: var(--fuente-segoeUIBold);
+  font-size: 40px;
+  color: black;
+}
+
+.nombrebeneficiario span {
+  font-weight: 700;
+}
+
+.alert-danger span {
+  font-weight: bold;
+}
+
+
+.badge-danger {
+  font-family: var(--fuente-segoeUIBold);
+    font-size: 15px;
+    padding: 15px;
+    color: #cb0404 !important;
+    border-radius: 10px;
+    border: 1px solid #cb0404;
+    background-color: white !important;
+    -webkit-box-shadow: 0px 0px 0px !important;
+}
+
+.page-footer {
+  padding: 60px;
+}
+
+.teal {
+  background-color: #0481cb !important;
+}
+
+.footerleft {
+  list-style: none;
+}
+
