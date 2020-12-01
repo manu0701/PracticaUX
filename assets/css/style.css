@@ -154,9 +154,7 @@ span.nombre-cuil {
   color: gray;
 }
 
-.iconaliquidar {
 
-}
 
 .icon_user {
   font-size: 18px;
@@ -233,9 +231,6 @@ a.nav-link {
   font-family: var(--fuente-segoeUIBold);
 }
 
-.beneficioMain {
-
-}
 
 .alert {
   width: 100%;
@@ -286,9 +281,7 @@ a.nav-link {
   font-size: 18rem;
 }
 
-.emisiontitulo {
-  
-}
+
 
 .titulobeneficiario {
   font-family: var(--fuente-segoeUIBold);
